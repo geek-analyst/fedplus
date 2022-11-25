@@ -29,7 +29,6 @@ public class FedplusListener extends TestBase implements ITestListener {
 		if (ITestResult.FAILURE == result.getStatus()) {
 			try {
 				TakesScreenshot screenshot = (TakesScreenshot) getDriver();
-				Thread.sleep(5000);
 				File src = screenshot.getScreenshotAs(OutputType.FILE);
 				FileUtils.copyFile(src, new File(System.getProperty("user.dir")+ "\\screenshots\\" + result.getMethod().getMethodName() + System.currentTimeMillis() + ".png"));
 				logger.log(Level.INFO, "Error screenshot taken...");
