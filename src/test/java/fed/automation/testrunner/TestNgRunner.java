@@ -7,7 +7,7 @@ import io.cucumber.testng.CucumberOptions;
 
 @CucumberOptions(features="src/test/resources/features",
 glue="fed.automation.stepdefinitions",
-tags="@test1",
+tags="@regression",
 monochrome=true,
 plugin = "json:target/cucumber-report.json"
 )
