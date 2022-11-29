@@ -15,8 +15,8 @@ public class FedExHomePage {
 		// This initElements method will create all WebElements
 		PageFactory.initElements(Hooks.getDriver(), this);
 	}
-
-	@FindBy(xpath = "//h4[contains(text(),'Netherlands')]/following-sibling::ul/li[2]")
+	
+	@FindBy(xpath = "//span[@class='fxg-geo-locator__link-label']")
 	WebElement languageOpt;
 
 	@FindBy(xpath = "//button[contains(text(),'ACCEPT ALL COOKIES')]")

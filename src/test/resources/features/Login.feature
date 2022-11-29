@@ -62,9 +62,10 @@ Feature: Login functionality
       | UID           | password |
       | test@test.abc | Test@123 |
 
+
+## Automated log out requests are blocked by the server.
   @logout
-  ## Automated log out requests are blocked by the server. 
-  Scenario Outline: Title of your scenario outline
+     Scenario Outline: Title of your scenario outline
     Given user navigates to login page
     When user enters the username "<UID>"
     And user enters the password "<password>"

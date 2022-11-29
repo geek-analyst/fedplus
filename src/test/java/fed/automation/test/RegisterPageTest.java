@@ -30,12 +30,12 @@ public class RegisterPageTest {
 
 	public void test_enter_email_id(String emailId) {
 		registerPage.enterEmailID(emailId);
-		// Thread.sleep(3000);
+		
 	}
 
 	public void test_submit_enter_login_details() {
 		registerPage.submitEnterLoginDetails();
-		// Thread.sleep(5000);
+		
 	}
 
 	public void test_login_page_appears() {

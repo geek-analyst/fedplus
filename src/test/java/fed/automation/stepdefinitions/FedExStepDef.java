@@ -32,7 +32,7 @@ public class FedExStepDef extends TestNgRunner {
 
 	@Given("^User navigates to the application$")
 	public void user_navigates_to_the_application() throws Throwable {
-		TestBase.getDriver().navigate().to("https://www.fedex.com/en-gb/home.html"); // TO do property file
+		TestBase.getDriver().navigate().to("https://www.fedex.com/en-gb/home.html"); 
 		TestBase.getDriver().manage().window().maximize();
 
 		homePageTest.test_select_language();

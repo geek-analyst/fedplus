@@ -28,5 +28,8 @@ public class Message {
 	public static String RESET_PASSWORD_TITLE = "Reset your password";
 
 	public static String RESET_PASSWORD_MESSAGE = "How do you want to reset your password?";
+	
+	public static String SECRET_ANSWER="Choclate";
+	
 
 }

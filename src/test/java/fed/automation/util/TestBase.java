@@ -10,6 +10,8 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.annotations.AfterSuite;
 import org.testng.annotations.BeforeTest;
 
+import io.github.bonigarcia.wdm.WebDriverManager;
+
 public class TestBase {
 
 	private static Logger logger = Logger.getLogger(TestBase.class.getName());
@@ -26,7 +28,8 @@ public class TestBase {
 		if (driver != null) {
 			return driver;
 		} else {
-			System.setProperty("webdriver.chrome.driver", System.getProperty("user.dir")+"\\chromedriver.exe");
+		//	System.setProperty("webdriver.chrome.driver", System.getProperty("user.dir")+"\\chromedriver.exe");
+			WebDriverManager.chromedriver().setup();
 			driver = new ChromeDriver();
 			logger.info("Browser started ...");
 			wait = new WebDriverWait(driver, Duration.ofSeconds(10));

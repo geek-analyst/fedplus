@@ -47,8 +47,6 @@ public class CreateUserIdPage {
 	@FindBy(id = "zip")
 	WebElement txtZip;
 
-	// txtZip.sendKeys(3404CB)
-
 	@FindBy(id = "address1")
 	WebElement txtAddress1;
 
@@ -94,7 +92,7 @@ public class CreateUserIdPage {
 
 	public void enterSecretAnswer() {
 
-		txtSecretAnswer.sendKeys("Vanilla");
+		txtSecretAnswer.sendKeys(Message.SECRET_ANSWER);
 	}
 
 	public void enterContactInformation(DataTable contactData) {
